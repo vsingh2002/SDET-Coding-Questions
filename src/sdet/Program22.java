@@ -7,7 +7,12 @@ public class Program22 {
 	public static void main(String[] args) {
 		int ar[] = { 2, 4, 6, 7, 3, 1 };
 		int n = ar.length;
-		System.out.println("Array before sorting is :" + Arrays.toString(ar));
+		// System.out.println("Array before sorting is :" + Arrays.toString(ar));
+		System.out.print("Array before sorting is :"+" ");
+		for (int i = 0; i < n; i++) {
+			System.out.print(ar[i] + " ");
+		}
+		System.out.println();
 		for (int i = 0; i < n - 1; i++) // Number of Passes
 		{
 			for (int j = 0; j < n - 1; j++) // Iteration in each pass
@@ -21,7 +26,13 @@ public class Program22 {
 			}
 
 		}
-		System.out.println("Array after sorting is :" + Arrays.toString(ar));
+
+		// System.out.println("Array after sorting is :" + Arrays.toString(ar));
+		System.out.print("Array after sorting is :");
+		for (int i = 0; i < n; i++) {
+			System.out.print(ar[i] + " ");
+		}
+
 	}
 
 }
